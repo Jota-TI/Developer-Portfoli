@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+body,
+html {
+    background-color: #111111;
+    color: white;
+    height: 100%; 
+}
+
+
+/* HEADINGS */ 
+#main-heading {
+    border-top: solid;
+}
+
+#about-me h1 {
+    font-family: 'Hammersmith One', sans-serif;
+}
+.cv-btn {
+    background-color: #0eda96;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    -webkit-animation: hue 10s infinite linear;
+    
+    
+    
+}
+/* Estilo do botão do WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 50%; /* Torna o botão redondo */
+    padding: 20px; /* Aumenta o espaço interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 32px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Largura fixa para garantir formato redondo */
+    height: 60px; /* Altura fixa para garantir formato redondo */
+    -webkit-animation: hue 10s infinite linear;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e; /* Cor de hover do WhatsApp */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#second-heading {
+    font-family: monospace;
+    font-size: 25px;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#second-heading:before,
+#second-heading:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+#second-heading:after {
+    margin: 0 0 0 20px;
+}
+
+#third-heading h1 {
+    max-width: 1034px;
+    display: flex;
+    font-size: 25px;
+    font-family: monospace;
+    width: 100%;
+    margin-top: 30px
+}
+
+
+#third-heading h1:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+#third-heading h1:after {
+    margin: 15px 0 0 10px;
+}
+
+#fourth-heading h1 {
+    max-width: 1034px;
+    display: flex;
+    font-size: 25px;
+    font-family: monospace;
+    width: 100%;
+    margin-top: 30px
+}
+
+
+#fourth-heading h1:before {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+#fourth-heading h1:before {
+    margin: 15px 10px 0 0;
+}
+
+/* ---------------------------------- */
+
+/* EFFECTS */
+
+.gray-text {
+    color: gray;
+}
+
+.gradiant-effect {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+.hue-bold {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+/* Extra Small Devices (mobile) - até 576px */
+@media (max-width: 576px) {
+    /* Estilos para dispositivos pequenos (smartphones) */
+    body {
+      background-color: lightblue;
+    }
+  }
+  
+  /* Small Devices (tablet) - até 768px */
+  @media (max-width: 768px) {
+    /* Estilos para tablets */
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* Medium Devices (tablet or small laptop) - até 992px */
+  @media (max-width: 992px) {
+    /* Estilos para dispositivos médios (tablets grandes ou laptops pequenos) */
+    .header {
+      font-size: 18px;
+    }
+  }
+  
+  /* Large Devices (laptops or desktops) - até 1200px */
+  @media (max-width: 1200px) {
+    /* Estilos para laptops ou desktops pequenos */
+    .main-content {
+      width: 90%;
+    }
+  }
+  
+  /* Extra Large Devices (large desktops) - até 1400px */
+  @media (max-width: 1400px) {
+    /* Estilos para grandes desktops */
+    .sidebar {
+      display: block;
+    }
+  }
+  /* Layout para dispositivos com tela até 576px */
+@media (max-width: 576px) {
+    .container {
+      display: block;
+      padding: 10px;
+    }
+    .item {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Layout para dispositivos com tela até 768px */
+  @media (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  /* Layout para dispositivos com tela até 992px */
+  @media (max-width: 992px) {
+    .container {
+      flex-direction: row;
+    }
+    .item {
+      width: 48%;
+    }
+  }
+  
+  /* Layout para dispositivos com tela até 1200px */
+  @media (max-width: 1200px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  
+  /* Layout para dispositivos com tela até 1400px */
+  @media (max-width: 1400px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+  }
+  
+  
+  
+/*---------------------------------------------------------*/
+
+/* OTHER */
+
+#main-box {
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 20px;
+}
+
+#about-me .name-heading {
+    max-width: 50rem;
+}
+
+#about-me div div img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    border: 3px solid;
+}
+
+.skills-icon {
+    font-size: 3rem;
+    color: gray;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: all .3s;
+}
+
+.skills-icon:hover {
+    transform: scale(1.1);
+    color: #02aab0;
+    background-image: -webkit-linear-gradient(92deg, #02aab0, #00cdac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+.tippy-box[data-theme~='gradiant'] {
+    color: white;
+    background-color: transparent;
+    opacity: 0.7;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #181818;
+}
+
+.card-text {
+    color: gray;
+}
+
+/* -------------------------- */
+
+
+/* CONTACT ME */
+
+
+#contact-me textarea,
+#contact-me input {
+    background-color: #181818;
+    outline: none;
+    border: none;
+    color: gray;
+}
+
+#contact-me textarea {
+    background: #181818;
+}
+
+
+#contact-me button {
+    font-family: 'Hammersmith One', sans-serif;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-animation: hue 10s infinite linear;
+    outline: none;
+    border: none;
+}
+
+/* -------------------------- */
+
+
+/* ANIMATION */
+
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+/* --------------- */
+
